@@ -1,0 +1,58 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(https://12116726.sites.myregisteredsite.com/files/100892411.png);
+    background-repeat: no-repeat;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Header and Navigation Bar */
+.searchBar {
+    max-width: 280px;
+    float: right;
+}
+
+.header-right{
+    position: absolute;
+    right: 10em;
+    float: right;
+    top: 0;
+}
+
+.navbar {
+    opacity: 0.75;
+    height: 100px;
+}
+
+/* The main navigation links */
+.navbar-nav > li > a{
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #00018A;
+  background-color: transparent;
+}
+
+.nav > li.disabled > a{
+    color: #000000;
+}
+
+/* Footer styling */
+footer ul > li {
+    display: inline;
+}
