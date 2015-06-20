@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-default">
+    <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,7 +16,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="http://alpineevapor.com//image/103003251_scaled_171x109.png" /></a>
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/Content/Images/StoreLogo.png" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -24,45 +24,33 @@
                     <li><a href="@Url.Action("Index", "Products")">Products</a></li>
                     <li><a href="@Url.Action("Ecig", "Products")">E-cigarettes</a></li>
                     <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
-                    <li>
-                        <div class="input-group searchBar text-right">
-                            <input type="text" class="form-control" placeholder="Search" />
-                            <span class="input-group-addon">
-                                <button class="glyphicon glyphicon-search"></button>
-                            </span>
-                        </div>
-                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
-                <div class="bottom text-center">
-                    <address>
-                        1412 S. Parker Rd.
-                        Denver, CO 80231<br />
-                        (720) 535-8323
-                    </address>
-                </div>
             </div>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
+            @RenderBody()
+            <hr />
         <footer>
-            <div class="col-sm-4">&copy; @DateTime.Now.Year - PY Development Application</div>
-            <div class="col-sm-4 text-center">
-                <address>
-                    1412 S. Parker Rd. +
-                    Denver, CO 80231<br />
-                    (720) 535-8323
-                </address>
-            </div>
-            <div class="col-sm-4 text-right">
-                <ul>
-                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
-                    <li><a href="@Url.Action("Index", "Products")">Products</a></li>
-                    <li><a href="@Url.Action("Ecig", "Products")">E-cigarettes</a></li>
-                    <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-4">&copy; @DateTime.Now.Year - PY Development Application</div>
+                <div class="col-sm-4 text-center">
+                    <address>
+                        1412 S. Parker Rd. <br />
+                        Unit A-130<br />
+                        Denver, CO 80231<br />
+                        (720) 535-8323
+                    </address>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Index", "Products")">Products</a></li>
+                        <li><a href="@Url.Action("Ecig", "Products")">E-cigarettes</a></li>
+                        <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>

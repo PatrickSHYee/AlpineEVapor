@@ -31,7 +31,9 @@
     top: 0;
 }
 
-.navbar {
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
     opacity: 0.75;
     height: 100px;
 }
@@ -50,6 +52,11 @@
 
 .nav > li.disabled > a{
     color: #000000;
+}
+
+/* Content styling */
+.content {
+    padding: 1em 2em 2em;
 }
 
 /* Footer styling */

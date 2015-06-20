@@ -7,7 +7,7 @@
 
     <ul class="nav navbar-nav navbar-right">
         <li>
-            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            @Html.ActionLink("Welcome " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
         </li>
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
     </ul>
@@ -15,8 +15,19 @@
 }
 else
 {
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav navbar-right">
         <li><a style="color: red" class="glyphicon glyphicon-heart" href="@Url.Action("Register", "Account")"></a></li>
         <li><a style="color: green" href="@Url.Action("Login", "Account")" class="glyphicon glyphicon-calendar"></a></li>
+        <li>
+            <div class="input-group searchBar navbar-right">
+                <input type="text" class="form-control" placeholder="Search" />
+                <span class="input-group-addon">
+                    <button class="glyphicon glyphicon-search"></button>
+                </span>
+            </div><br />
+            <address class="text-right">
+                1412 S. Parker Rd.<br />Unit A-103<br />Denver, CO 80231<br />(720) 535-8323
+            </address>
+        </li>
     </ul>
 }

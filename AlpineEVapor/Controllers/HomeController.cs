@@ -26,5 +26,10 @@ namespace AlpineEVapor.Controllers
 
             return View();
         }
+
+        public ActionResult Products()
+        {
+            return View();
+        }
     }
 }
